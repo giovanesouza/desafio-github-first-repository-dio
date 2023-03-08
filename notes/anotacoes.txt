@@ -1,0 +1,46 @@
+ANOTAÇÕES
+
+- Site oficial do instalador (GIT): https://git-scm.com/
+
+=> COMANDOS IMPORTANTES:  windows / linux
+
+dir / ls: Exibe uma lista de diretórios na pasta a qual está situado;
+cd / cd (change directory): Permite navegar entre as pastas;
+cd /  (‘cd barra’)=> Leva para a origem do disco C.
+cd windows => Acessa a pasta windows;
+dir / ls (dentro do diretório windows): Lista todos os diretórios desta pasta;
+cd .. / cd .: Retorna à base do diretório (:c).
+cls (clear screen) / clear: Limpa a tela.
+Tecla TAB: Autocomplete. Ex.: cd w e aperta a tecla TAB, ele completa automaticamente com a palavra window (dentro do diretório C - varia conforme a pasta de origem).
+
+
+=> CRIANDO PASTAS
+mkdir / mkdir (make directory): Cria uma pasta/diretório. Ex.: mkdir workspace
+
+
+=> CRIANDO ARQUIVOS
+echo: Print uma frase no terminal. Ex.: echo hello
+echo TEXTO > nomeArquivo.extensão: Cria um arquivo com texto. 
+
+Ex.: echo hello > hello.txt
+
+O sistema verifica se há um arquivo com este nome, caso não exista, cria um.
+
+Símbolo de MAIOR QUE é um redirecionador de fluxo. Ele pega o output (saída da função echo) e COLOCA em no ARQUIVO criado.
+
+
+=> EXCLUINDO DIRETÓRIOS / ARQUIVOS
+
+del nomeDiretório: Exclui APENAS ARQUIVOS do diretório.
+
+Windows: rmdir nomeDiretório /S /Q: Exclui TODO o diretório.
+Linux: rm -rf nomeDiretório: o r significa recursivo (caso tenha outras pastas de mesmo nome tambémm serão excluídas e f de forced (não pergunta se realmente deseja excluir)).
+
+
+-----------------
+
+git init: Inicializa o repositório;
+git add . OU git add *: Adiciona todos os arquivos para serem commitados;
+git commit -m "mensagem": Utilizado para inserir breve descrição sobre o que foi realizado no(s) arquivo(s) - alterações;
+git push: Envia os arquivos commitados para o repositório remoto (github);
+git clone urlProjeto: Clona um repositório
